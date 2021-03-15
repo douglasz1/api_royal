@@ -11,3 +11,13 @@ include_once '../objects/category.php';
 $database = new Database();
 $database->db_name="api_db";
 $db = $database->getConnection();
+
+// initialize object
+$category = new Category($db);
+
+// query categorys
+$stmt = $category->read();
+$num = $stmt->rowCount();
+
+// check if more than 0 record found
+if($num>0){
