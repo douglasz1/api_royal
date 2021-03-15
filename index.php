@@ -1,3 +1,4 @@
 <?php
-include("config/config.php");
-include("DIRREQ.lib/vendor/autoload.php");
+
+include __DIR__.'/includes/header.php';
+include __DIR__.'/includes/footer.php';
